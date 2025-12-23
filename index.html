@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electr.io — Physics-Driven Space Simulation</title>
+  <meta name="description" content="Electr.io is a physics-driven space simulation focused on realistic gravity, emergent systems, and long-term exploration." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <main class="container">
+    <section class="hero">
+      <h1>Electr.io</h1>
+      <p class="tagline">
+        A physics-driven space simulation
+      </p>
+      <p class="description">
+        Built around realistic gravity, emergent systems, and long-term exploration.
+        Developed openly as systems evolve.
+      </p>
+
+      <div class="links">
+        <a href="#" aria-disabled="true">Steam (Coming Soon)</a>
+        <a href="#" aria-disabled="true">Devlogs</a>
+        <a href="#" aria-disabled="true">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Electr.io</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
