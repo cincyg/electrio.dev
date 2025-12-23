@@ -1,1 +1,81 @@
+:root {
+  --bg: #0b0d12;
+  --fg: #e6e8ee;
+  --muted: #9aa1b2;
+  --accent: #5ea0ff;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.description {
+  margin-top: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--fg);
+}
+
+.links {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
